@@ -1,0 +1,56 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  ClientHeight = 480
+  ClientWidth = 320
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lblTitulo: TLabel
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Abrindo V'#237'deos do YouTube'
+      TabOrder = 0
+    end
+  end
+  object edtLink: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 1
+    Text = 'https://www.youtube.com/embed/o7N_uwg4tvA'
+    TextSettings.HorzAlign = Center
+    Position.X = 10.000000000000000000
+    Position.Y = 48.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnCarregarLink: TButton
+    Align = Top
+    Position.Y = 80.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Carregar Link'
+    OnClick = btnCarregarLinkClick
+  end
+  object WebBrowser1: TWebBrowser
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 356.000000000000000000
+    Size.PlatformDefault = False
+  end
+end
